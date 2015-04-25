@@ -84,4 +84,10 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+
+  # ref. https://github.com/DatabaseCleaner/database_cleaner#database-cleaner
+  require 'database_cleaner'
+  config.before(:each) do
+    DatabaseCleaner.clean_with(:truncation)
+  end
 end
