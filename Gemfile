@@ -47,3 +47,4 @@ group :development, :test do
   gem 'database_cleaner', '1.4.1'
 end
 
+gem 'twitter-bootstrap-rails', '3.2.0'
